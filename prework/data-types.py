@@ -58,14 +58,110 @@ my_str = 'abc'
 # print("""My nickname is "Wolfy". What's yours?""")
 
 # String literals
-print(f'5 plus 5 equals {5 + 5}.')
+# print(f'5 plus 5 equals {5 + 5}.')
 my_name = "Billy"
-print(f"My name is {my_name}.")
+# print(f"My name is {my_name}.")
 
 # How to print long numbers with commas in f strings
-print(f'{9123456789:,}')
+# print(f'{9123456789:,}')
 
 # Sequences
 # represent an ordered collection of objects. A sequences objects can be accessed using a numeric index. In many other languages, the best known sequence is the array.
 # Python uses lists to fill the same role, but tuples and ranges are also important
 
+#LISTS ARE MUTABALE TUPES ARE IMMUTABLE
+my_list = [1, 'xyz', True, [2, 3, 4]]
+
+
+tup = ('xyz', [2, 3, 4], 1, True)
+# print(tup)
+
+# Mutating Lists
+my_list[3] = 'New Value'
+# print(my_list)
+
+# Ranges
+# Sequence of integers between two endpoints. Ranges most commonly used to iterate over an increasing or decreasing range of integers
+# ranges can also use [] to find an index
+# print(tuple(range(1, 10, 2)))
+my_range = range(5, 10)
+my_range[3] # === prints the 3rd value in this range
+
+# Maps
+# Represent an unordered collection of objects stored as key:value pairs. Each key (usually a string) provides a unique identifier for a speicfic object in the map
+# The dictionary (class dict) is the most common used map in Python
+# A dict is a collection of key:value pairs, it is similar to a list but uses keys instead of indexes to access specific elements
+
+# my_dict = {
+#     'dog': 'barks',
+#     'cat': 'meows',
+#     'pig': 'oinks'
+# }
+
+# print(my_dict)
+
+# Dictionary literals may also use a multi-line format and include lists
+
+my_dict = {
+    'title': "Monty Python's Flying Circus",
+    'cast': [
+        'Eric Idle',
+        'John Cleese',
+        'Terry Gilliam',
+        'Graham Chapman',
+        'Michael Palin',
+        'Terry Jones',
+    ],
+    'first_season': 1969,
+    'last_season': 1974,
+    'reboot_season': None,
+}
+# can also use the same key to change the keys value
+my_dict['first_season'] = 1970
+# print(my_dict)
+
+# Sets
+# Represent an unordered collection of unique objects; the objects are sometimes called members of the set
+# Sets are similar to maps, except instead of using keys and values, a set is simply a collection of immutable ( and hashable, as mentioned above ) objects
+
+# Declaring empty set
+s1 = set()
+
+# creating a set from a literal
+s2 = {2, 3, 5, 7, 11, 13}
+
+# creating a set from a string
+s3 = set('hello world!') # set members are always unique, even if you try to add duplicates. So there will always only be 1 occurrence. 
+
+# There are two types of sets, regular sets, like above, and frozen sets (frozenset). Frozen sets are merely immutable sets
+s5 = frozenset([1, 2, 3])
+# you can initialize a frozen set with any iterable type, (lists, tuples, ranges)
+
+
+
+# Exercises ===========================================================================================================\
+# 1. Identify the data type or class for each of the following values:
+    # 'True' === String
+    # False === Boolean
+    # (1, 2, 3) === Tuple
+    # 1.5 === Float
+    # [1, 2, 3] === List
+    # 2 === Integer
+    # range(5) === Range
+    # {1, 2, 3} === Set
+    # None === NoneType
+    # {'foo': 'bar'} === Dictionary
+
+# 2. Create a tuple called names that contains several pet names
+# names = ('Oden', 'Freya', 'Albini', 'Sam', 'Brownie', 'Bear', 'Missy')
+# print(names)
+
+# 3. Create a dictionary named pets that contains a list of pet names and the type of animal
+pets = {
+    'Oden': 'dog',
+    'Freya': 'dog',
+    'Albini': 'frog',
+    'Bear': 'dog'
+}
+
+print(pets)
