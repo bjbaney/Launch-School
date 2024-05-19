@@ -157,11 +157,11 @@ s5 = frozenset([1, 2, 3])
 # print(names)
 
 # 3. Create a dictionary named pets that contains a list of pet names and the type of animal
-pets = {
-    'Oden': 'dog',
-    'Freya': 'dog',
-    'Albini': 'frog',
-    'Bear': 'dog'
-}
+# pets = {
+#     'Oden': 'dog',
+#     'Freya': 'dog',
+#     'Albini': 'frog',
+#     'Bear': 'dog'
+# }
 
-print(pets)
+# print(pets)
