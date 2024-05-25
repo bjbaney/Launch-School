@@ -146,3 +146,89 @@ def is_digit(char):
 # foo(42, 3,141592, 2,718) # <-- this program should run and print out the 3 arguments
 
 # 10. Without running the following code, what do you think it will do?
+# def foo(first, second=3, third=2):
+#     print(first)
+#     print(second)
+#     print(third)
+# foo(42, 3.141592) # <-- will print 42, 3.141592, 2
+
+# 11. Without running the following code, what do you think it will do?
+# def foo(first, second=3, third=2):
+#     print(first)
+#     print(second)
+#     print(third)
+# foo(42) # <-- print 42, 3, 2
+
+# 12. Without running the following code, what do you think it will do?
+# def foo(first, second=3, third=2):
+#     print(first)
+#     print(second)
+#     print(third)
+# foo() # <-- throw an error, because it was expecting three arguments, only got 2 from the defaults. 
+
+
+# 13. Without running the following code, what do you think it will do?
+# def foo(first, second=3, third):
+#     print(first)
+#     print(second)
+#     print(third)
+# foo(42) # <-- throw an error, because the second param has a default, so every param after that one must have a default too. 
+
+# 14. Identify all of the identifiers on each line of the following code <-- multiply, left, right, get_num, prompt, first_number, second_number, product, float, input, print
+# def multiply(left, right):
+#     return left * right
+
+# def get_num(prompt):
+#     return float(input(prompt))
+
+# first_number = get_num('Enter the first number: ')
+# second_number = get_num('Enter the second number: ')
+# product = multiply(first_number, second_number)
+# print(f'{first_number} * {second_number} = {product}')
+
+# 15. Using the code below, classify the identifiers as global, local, or built-in. For our purposes, you may assume this code is the entire program.
+    # <-- multiply, get_num, first_number, second_number, product are global scope, left, right, prompt input are local scope, float, input, print are built-in
+# def multiply(left, right):
+#     return left * right
+
+# def get_num(prompt):
+#     return float(input(prompt))
+
+# first_number = get_num('Enter the first number: ')
+# second_number = get_num('Enter the second number: ')
+# product = multiply(first_number, second_number)
+# print(f'{first_number} * {second_number} = {product}')
+
+# 16. In the code shown below, identify all of the function names and parameters present in the code. Include the line numbers for each item identified.
+ # Using same code from number 15
+ # <-- multiply, get_num, float, input, print are functions, left, right, prompt are parameters
+
+# 17. Which of the identifiers in the following program are function names? Which are method names? Which are built-in functions?
+    # <-- function names are say, method names are upper, lower, built-in functions are print, input, max
+# def say(message):
+#     print(f'==> {message}')
+
+# string1 = input()
+# string2 = input()
+
+# say(max(string1.upper(), string2.lower()))
+
+# 18. The following function returns a list of the remainders of dividing the numbers in numbers by 3:
+# def remainders_3(numbers):
+#     return [number % 3 for number in numbers]
+
+# # Use this function to determine which of the following lists contains at least one number that is not evenly divisible by 3 (that is, the remainder is not 0):
+# numbers_1 = [0, 1, 2, 3, 4, 5, 6] # <-- X
+# numbers_2 = [1, 2, 4, 5] # <-- X
+# numbers_3 = [0, 3, 6]
+# numbers_4 = [] 
+
+# 19. The following function returns a list of the remainders of dividing the numbers in numbers by 5:
+# def remainders_5(numbers):
+#     return [number % 5 for number in numbers]
+
+# # Use this function to determine which of the following lists do not contain any numbers that are divisible by 5:
+# numbers_1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# numbers_2 = [1, 2, 3, 4, 6, 7, 8, 9] # <-- X
+# numbers_3 = [0, 5, 10]
+# numbers_4 = [] # <-- X
